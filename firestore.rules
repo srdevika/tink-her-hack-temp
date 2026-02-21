@@ -1,0 +1,51 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    match /alerts/{alertId} {
+      // SOS create is allowed without auth for MVP, but sessionId is required.
+      allow create: if request.resource.data.sessionId is string
+                    && request.resource.data.sessionId.size() > 0;
+
+      // Same-session updates only while alert is not expired.
+      allow update: if request.resource.data.sessionId == resource.data.sessionId
+                    && resource.data.status != 'EXPIRED';
+
+      // Tracking flow reads alerts by id.
+      allow read: if true;
+      allow delete: if false;
+    }
+
+    match /emergencyContacts/{contactId} {
+      allow read: if isOwner(resource.data.uid);
+      allow create: if isOwner(request.resource.data.uid);
+      allow update, delete: if isOwner(resource.data.uid);
+    }
+
+    match /users/{userId} {
+      allow read, write: if isOwner(userId);
+    }
+
+    // Kept for compatibility with existing backend endpoint.
+    match /cloudAlerts/{alertId} {
+      allow create: if request.resource.data.sessionId is string
+                    && request.resource.data.sessionId.size() > 0;
+      allow read: if true;
+      allow update: if request.resource.data.sessionId == resource.data.sessionId;
+      allow delete: if false;
+    }
+
+    // Default deny for all other collections/documents.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
