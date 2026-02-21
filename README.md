@@ -68,8 +68,26 @@ List the key features of your project:
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+npm run dev
 ```
+
+### Deployment (Vercel)
+
+To deploy this project on Vercel and ensure it works correctly with React Router and Firebase:
+
+1. **Push to GitHub**: Ensure your latest changes are pushed to your repository.
+2. **Import to Vercel**: Connect your GitHub repository to Vercel.
+3. **Configure Environment Variables**: In the Vercel project settings, add the following environment variables (matching your `.env` file):
+   - `VITE_FIREBASE_API_KEY`
+   - `VITE_FIREBASE_AUTH_DOMAIN`
+   - `VITE_FIREBASE_PROJECT_ID`
+   - `VITE_FIREBASE_STORAGE_BUCKET`
+   - `VITE_FIREBASE_MESSAGING_SENDER_ID`
+   - `VITE_FIREBASE_APP_ID`
+   - `VITE_FIREBASE_DATABASE_URL`
+4. **Deploy**: Vercel will automatically detect Vite and use the `vercel.json` for routing.
+
+---
 
 ### For Hardware:
 
