@@ -2,27 +2,28 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [SMART DISASTER CLOUD ROUTER] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [PHOENIX]
 
 ### Team Members
-- Member 1: [Devika.S.R] - [Lordes matha collage of science and technology]
-- Member 2: [Harsha.H.B] - [Lourdes matha collage of science and technology]
+- Member 1: [DEVIKA S.R] - [LMCST]
+- Member 2: [HARSHA H B] - [LMCST]
 
 ### Hosted Project Link
-[]
+[http://localhost:5176/]
 
 ### Project Description
-[Smart Disaster Cloud Router is a real-time safety system designed to help women and vulnerable individuals during emergencies. When a user is in danger, they can press the SOS button on a website or app.]
+[Smart Disaster Cloud Router is a real-time safety system designed to help women and vulnerable individuals during emergencies. When a user is in danger, they can press the SOS button on a website or app. The system immediately:]
 
 ### The Problem statement
 [Women and vulnerable individuals often face emergencies in public places where immediate help is unavailable. Traditional emergency systems, like calling police or family, can be slow or inaccessible, leading to delayed assistance. Additionally, people nearby who could help are usually unaware of the emergency.]
 
 ### The Solution
-[We propose Smart Disaster Cloud Router, a real-time safety system that allows users to instantly send their location to trusted contacts and alert nearby registered helpers at the press of a button.SOS Button: User presses a button to send their current GPS location.
+We propose Smart Disaster Cloud Router, a real-time safety system that allows users to instantly send their location to trusted contacts and alert nearby registered helpers at the press of a button.
+SOS Button: User presses a button to send their current GPS location.
 Guardian Alerts: Pre-registered contacts are notified immediately via console/logs or SMS.
 Nearby Helpers: Users who opted in nearby receive alerts to assist quickly.
 Live Tracking: Generates a Google Maps link for accurate, real-time tracking.
@@ -35,25 +36,25 @@ Cloud Integration (Optional): Firebase stores alerts and helper locations for ea
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, html,css,javascript[nodejs]]
-- Frameworks used: [e.g., expressjs (nodejs),firebase realtime]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: [e.g., JavaScript, CSS,,HTML,JAVASCRIPT(nodejs)]
+- Frameworks used: [e.g., none , express.js,firebase realtime database twilio api]
+- Libraries used: [e.g., firebase js sdk ,cors,bodyparser,twilio]
+- Tools used: [e.g., VS Code, Git,live server,browser,nodejs and npm,github,pages,render]
 
 **For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Main components: [laptop,smartphone ,internet connection,gsm module]
+- Specifications: [laptop,smartphone,backend server,firebsase,twilio]
+- Tools required: [location permission ,firebase tools,safety and privacy,deployment rules]
 
 ---
 
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: [SOS Emergency Alert: Instantly sends the user’s live GPS location to pre-registered guardians.]
+- Feature 2: [Nearby Helper Notification: Alerts registered people nearby to provide immediate assistance.]
+- Feature 3: [Live Location Tracking: Generates a Google Maps link for real-time tracking of the user in danger.]
+- Feature 4: [Cloud Storage & Logging (Optional): Saves SOS alerts and helper locations in Firebase for monitoring and history.]
 
 ---
 
@@ -63,18 +64,48 @@ List the key features of your project:
 
 #### Installation
 ```bash
-[Installation commands - e.g., npm install, pip install -r requirements.txt]
+[Installation commands - e.g., npm init -y, npm install express twilio cors body-parser,node index.js]
 ```
 
 #### Run
 ```bash
-[Run commands - e.g., npm start, python app.py]
+[Run commands - e.g., # Open VS Code in project folder
+# Right-click index.html → Open with Live Server
+# OR
+# Use command palette → "Live Server: Open with Live Server",# Start Node.js server
+node index.js,node index.js]
 ```
 
 ### For Hardware:
 
 #### Components Required
-[List all components needed with specifications]
+[Laptop / PC
+Run frontend + backend + testing
+Any modern laptop with 4GB+ RAM, Node.js installed, VS Code
+Required for development and Live Server
+Smartphone / GPS-enabled device
+Capture live GPS location
+GPS-capable, Chrome/Edge/Safari browser, internet access
+Must allow location permissions for SOS/Helper buttons
+Internet Connection
+Cloud database, SMS, map links
+Stable 5–10 Mbps
+Needed for Firebase, Twilio, and map integration ,3️⃣ Sensors / Accessories (Optional)
+Component
+Purpose
+Specifications
+Notes
+GPS Module (NEO-6M / NEO-7M)
+Get precise location for Arduino / Pi
+3.3V–5V, serial output
+Only needed if not using smartphone GPS
+Push Button / Physical Switch
+Trigger SOS physically
+Standard tactile push button
+Connect to Arduino / Pi for emergency SOS
+Power Supply / USB Cable
+Power Arduino / Pi
+5V, 2A]
 
 #### Circuit Setup
 [Explain how to set up the circuit]
@@ -87,25 +118,117 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
+![Screenshot1](<img width="1634" height="905" alt="Screenshot 2026-02-21 105339" src="https://github.com/user-attachments/assets/06f2b27c-f2f7-4a1e-aa13-b463b56ba6fe" />
+)
 *Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
+![Screenshot2](<img width="1059" height="824" alt="Screenshot 2026-02-21 105415" src="https://github.com/user-attachments/assets/2783d007-89df-4c01-b618-692e10a66cc0" />
+)
 *Add caption explaining what this shows*
 
-![Screenshot3](Add screenshot 3 here with proper name)
+![Screenshot3](<img width="1053" height="953" alt="Screenshot 2026-02-21 105442" src="https://github.com/user-attachments/assets/060c6eaf-dac7-42b8-a70e-c8776ab0e869" />
+)
 *Add caption explaining what this shows*
-
+Screenshot 4](<img width="843" height="498" alt="Screenshot 2026-02-21 105509" src="https://github.com/user-attachments/assets/0032ef16-6587-4d3a-9bcc-a514c5658911" />
+)
 #### Diagrams
 
 **System Architecture:**
 
-![Architecture Diagram](docs/architecture.png)
+![Architecture Diagram]([User Device / Browser] 
+      ↓
+  (GPS coordinates)
+      ↓
+[SOS Button / Helper Button]
+      ↓
+   Frontend JS Logic
+      ↓
+[Backend Server (Node.js + Express)] ← Optional for SMS
+      ↓
+[Cloud Database (Firebase)] ← Optional for storing alerts
+      ↓
+[Guardians / Nearby Helpers]
+      ↓
+  Google Maps link / SMS / Console Alerts)
+
+  2️⃣ Components
+Component
+Purpose
+Frontend (HTML + CSS + JS)
+User interface, SOS/Helper buttons, capture GPS, generate map links
+Backend (Node.js + Express)
+Optional: process requests, send SMS using Twilio, manage API calls
+Database (Firebase Realtime DB)
+Optional: store SOS alerts, helper locations, history
+SMS Service (Twilio)
+Optional: send real SMS to guardians
+User Device / GPS Sensor
+Provides real-time location for SOS and helper registration
+Optional Hardware (Arduino/RPi + Button)
+Physical SOS trigger, can send alert to backend
+
+3️⃣ Data Flow
+User presses SOS button
+Frontend captures GPS coordinates
+Coordinates are:
+Sent to Firebase (optional cloud storage)
+Sent to Backend → triggers SMS via Twilio (optional)
+Nearby helpers registered in Firebase or frontend memory get alerted
+Guardians receive SMS / alert with Google Maps link
+User’s live location updates every few seconds until marked safe
 *Explain your system architecture - components, data flow, tech stack interaction*
 
 **Application Workflow:**
 
-![Workflow](docs/workflow.png)
+![Workflow](4️⃣ Technology Stack / Interaction
+Layer
+Technology / Language
+Interaction
+Frontend
+HTML + CSS + JS
+Handles UI, GPS capture, button clicks
+Backend
+Node.js + Express
+Receives frontend requests, sends SMS alerts
+Cloud DB
+Firebase Realtime Database
+Stores SOS & helper data; provides real-time updates
+SMS
+Twilio API
+Sends SMS to guardians with map links
+Map
+Google Maps
+Generates links for live location tracking
+Optional Hardware
+Arduino/RPi + Push Button
+Sends digital signal to backend to trigger SOS
+5️⃣ Interaction Flow
+Frontend → captures user input (SOS or Helper)
+Backend (optional) → processes SOS, sends SMS
+Firebase → stores/updates locations
+Helpers & Guardians → alerted via console / SMS / map link
+Frontend updates status messages and live map)
+START
+   ↓
+User opens website / app
+   ↓
+User grants GPS permission
+   ↓
+User presses SOS button
+   ↓
+Frontend captures live latitude & longitude
+   ↓
+Send data to Firebase / Backend
+   ↓
+Backend triggers alert logic (optional SMS via Twilio)
+   ↓
+Send alert to:
+       ├─ Guardian contacts
+       └─ Nearby registered helpers
+   ↓
+Generate Google Maps tracking link
+   ↓
+Guardians / Helpers
 *Add caption explaining your workflow*
 
 ---
@@ -114,15 +237,36 @@ List the key features of your project:
 
 #### Schematic & Circuit
 
-![Circuit](Add your circuit diagram here)
+![Circuit](+5V
+           |
+           |
+         [Button]
+           |
+           |--------> Arduino Digital Pin 2 (Input)
+           |
+         [10kΩ Resistor]
+           |
+          GND)
 *Add caption explaining connections*
 
-![Schematic](Add your schematic diagram here)
+![Schematic](Push Button:
+One leg connected to +5V
+Other leg connected to Arduino Digital Pin 2
+10kΩ Pull-down Resistor:
+Connects Digital Pin 2 to GND
+Ensures stable LOW signal when button is not pressed
+Arduino Board:
+Reads digital pin input
+Triggers SOS logic (e.g., send alert to backend or Firebase)
+Optional Add-ons:
+LED indicator for SOS
+GSM module for direct SMS)
 *Add caption explaining the schematic*
 
 #### Build Photos
 
-![Team](Add photo of your team here)
+![Team](![WhatsApp Image 2026-02-21 at 11 08 03 AM](https://github.com/user-attachments/assets/45901e44-519b-40fa-8b61-9dd63070b1e4)
+)
 
 ![Components](Add photo of your components here)
 *List out all components shown*
@@ -365,7 +509,7 @@ python script.py -v --format json data.json
 ## Project Demo
 
 ### Video
-[Add your demo video link here - YouTube, Google Drive, etc.]
+[https://drive.google.com/file/d/1gkKUQkmvTcmdvrvRdMtEATMcz9w4vdcg/view?usp=sharing]
 
 *Explain what the video demonstrates - key features, user flow, technical highlights*
 
@@ -393,10 +537,27 @@ If you used AI tools during development, document them here for transparency:
 **Percentage of AI-generated code:** [Approximately X%]
 
 **Human Contributions:**
-- Architecture design and planning
-- Custom business logic implementation
-- Integration and testing
-- UI/UX design decisions
+-1️⃣ User / Victim
+Trigger SOS: Presses the SOS button in an emergency
+Grants permissions: Allows GPS/location access on their device
+Marks safe: Stops the alert once the danger is over
+2️⃣ Guardians / Emergency Contacts
+Receive alerts: Notified instantly via SMS or console alert
+Respond to emergency: Can call, track, or reach the user physically
+Provide support: Ensures the user’s safety during the event
+3️⃣ Nearby Helpers / Crowd
+Registered volunteers: Users who opt-in to receive alerts in a locality
+Immediate assistance: Can quickly respond to help the person in danger
+Monitor & act: Use map links to reach the user efficiently
+4️⃣ Developers / Hackathon Team
+Build system: Frontend, backend, cloud integration
+Test SOS & alerts: Ensure alerts, location, and notifications work
+Design workflow: Decide how data flows from user → cloud → helpers
+Summary of Human Contribution
+Victim: Initiates SOS and shares location
+Guardians: Receive alerts and respond
+Nearby Helpers: Provide immediate physical assistance
+Developers: Build, test, and maintain the system
 
 *Note: Proper documentation of AI usage demonstrates transparency and earns bonus points in evaluation!*
 
@@ -404,9 +565,9 @@ If you used AI tools during development, document them here for transparency:
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
+- [Name 1]: [Specific contributions - e.g., Frontend development, ui+GPS +SOS, ]
+- [Name 2]: [Specific contributions - e.g., Backend development, API+SMS+Alert logic]
+- [Name 3]: [Specific contributions - e.g., database, Store and uodate ALERT]
 
 ---
 
