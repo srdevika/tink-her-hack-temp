@@ -9,20 +9,24 @@
 ### Team Name: [Name]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Devika.S.R] - [Lordes matha collage of science and technology]
+- Member 2: [Harsha.H.B] - [Lourdes matha collage of science and technology]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[]
 
 ### Project Description
-[2-3 lines about what your project does]
+[Smart Disaster Cloud Router is a real-time safety system designed to help women and vulnerable individuals during emergencies. When a user is in danger, they can press the SOS button on a website or app.]
 
 ### The Problem statement
-[What problem are you solving?]
+[Women and vulnerable individuals often face emergencies in public places where immediate help is unavailable. Traditional emergency systems, like calling police or family, can be slow or inaccessible, leading to delayed assistance. Additionally, people nearby who could help are usually unaware of the emergency.]
 
 ### The Solution
-[How are you solving it?]
+[We propose Smart Disaster Cloud Router, a real-time safety system that allows users to instantly send their location to trusted contacts and alert nearby registered helpers at the press of a button.SOS Button: User presses a button to send their current GPS location.
+Guardian Alerts: Pre-registered contacts are notified immediately via console/logs or SMS.
+Nearby Helpers: Users who opted in nearby receive alerts to assist quickly.
+Live Tracking: Generates a Google Maps link for accurate, real-time tracking.
+Cloud Integration (Optional): Firebase stores alerts and helper locations for easy retrieval.]
 
 ---
 
@@ -31,8 +35,8 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
+- Languages used: [e.g., JavaScript, html,css,javascript[nodejs]]
+- Frameworks used: [e.g., expressjs (nodejs),firebase realtime]
 - Libraries used: [e.g., axios, pandas, JUnit]
 - Tools used: [e.g., VS Code, Git, Docker]
 
